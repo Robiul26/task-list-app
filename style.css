@@ -1,0 +1,185 @@
+
+body {
+    background: forestgreen;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* background: forestgreen; */
+
+    width: 315px;
+    min-height: 580px;
+    padding: 0 5%;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.colors {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+#green {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    background: green;
+    cursor: pointer;
+}
+
+#black {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    background: black;
+    cursor: pointer;
+}
+
+#chocolate {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    background: chocolate;
+    cursor: pointer;
+}
+
+.hr {
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+}
+
+h1,
+h2 {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.chocolateInput {
+    color: chocolate!important;
+}
+.chocolateInput::placeholder {
+    color: chocolate!important;
+}
+.blackInput {
+    color: black!important;
+}
+.blackInput::placeholder {
+    color: black!important;
+}
+
+input {
+    border: none;
+    outline: none;
+    height: 30px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+    color: forestgreen;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+input::placeholder {
+    color: forestgreen;
+}
+
+
+
+ol li {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-break: auto;
+    margin-bottom: 5px;
+}
+
+ol li a{
+   text-decoration: none;
+   color: #fff;
+   letter-spacing: 1px;
+   background: red;
+   font-size: 15px;
+   width: 60px;
+   height: 23px;
+   border-radius: 5px;
+   display:inline-block;
+   text-align:center;
+   line-height: 23px;
+}
+.blackBtn{
+    background: #fff!important;
+    color: black!important;
+    border: 1px solid black!important;
+}
+.blackBtn:hover{
+    background: black!important;
+    color: #fff!important;
+    border: 1px solid #fff!important;
+}
+.chocolateBtn{
+    background: #fff!important;
+    color: chocolate!important;
+    border: 1px solid chocolate!important;
+}
+.chocolateBtn:hover{
+    background: chocolate!important;
+    color: #fff!important;
+    border: 1px solid #fff!important;
+}
+#taskClearBtn,
+#taskSubmitBtn {
+    background: #fff;
+    color: forestgreen;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 150px;
+    padding: 10px 12px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+#taskClearBtn:hover,
+#taskSubmitBtn:hover {
+    background: green;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+#tasklist {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
