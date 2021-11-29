@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css file -->
     <link rel="stylesheet" href="./style.css">
-    <title>Task List App</title>
+    <title>Book List App</title>
 
 </head>
 
@@ -15,22 +15,38 @@
     <section style="display: flex; align-items: center; justify-content: center;">
         <div class="container">
             <div class="colors">
-                <div id="green"></div>
+                <div id="white"></div>
                 <div id="black"></div>
-                <div id="chocolate"></div>
             </div>
-            <h1>Task List App</h1>
-            <form action="" id="taskForm">
-                <input type="text" name="" id="taskInput" placeholder="New Task">
-                <button id="taskSubmitBtn">Add Task</button>
-                <hr class="hr">
-            </form>
-            <h2>Task List</h2>
-            <input type="text" id="taskFilter" placeholder="Filter Task">
-            <ol id="tasklist">
+            <h1>Add Book</h1>
+            <form action="" id="bookForm">
+                <div id="alert"></div>
+                <label for="title">Title
+                </label>
+                <input type="text" name="" id="title">
+                <label for="author">Author
+                </label>
+                <input type="text" name="" id="author">
+                <label for="isbn">ISBN
+                </label>
+                <input type="text" name="" id="isbn">
+                <button id="btnSubmit">Submit</button>
 
-            </ol>
-            <button id="taskClearBtn">Clear Tasks</button>
+            </form>
+            <h2>Book List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="bookList">
+
+                </tbody>
+            </table>
         </div>
     </section>
 
